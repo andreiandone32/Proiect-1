@@ -60,7 +60,6 @@ h1 {
 h2 {
     font-size: 3rem;
     color: var(--text-dark);
-    font-family: ;
 }
 
 p {
@@ -148,7 +147,8 @@ nav .nav-title {
 
 nav a {
     font-family: 'Kanit';
-    font-size: var(--fs-small) color: var(--text-dark);
+    font-size: var(--fs-small);
+    color: var(--text-dark);
     padding: var(--spacing-small);
     transition: color 200ms ease;
 }
