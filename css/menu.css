@@ -1,0 +1,141 @@
+.welcome {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* RECIPES SECTION  */
+
+h3 {
+    font-family: 'Nunito';
+}
+
+.recipes h2 {
+    padding-top: var(--spacing-large);
+}
+
+.recipes h2,
+.recipes .main-paragraph {
+    margin-bottom: var(--spacing-large);
+    text-align: center;
+}
+
+.fundal-bg {
+    width: 100%;
+    background-color: var(--dark-red);
+    background-image: url("/img/fundal.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+img {
+    border-radius: 20px;
+}
+
+
+/* //// */
+
+.recipes {
+    padding-top: var(--spacing-activity);
+    padding-bottom: var(--spacing-activity);
+}
+
+.recipes-container {
+    display: flex;
+    /* gap: 2rem; */
+    flex-wrap: wrap;
+}
+
+.recipe-wrapper {
+    flex-basis: calc(100% / 3);
+    padding: 0 var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+}
+
+
+/* RECIPE */
+
+.recipe {
+    border: 1px solid #ddd;
+    padding: var(--spacing-tiny);
+}
+
+.recipe img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    max-height: 200px;
+    margin-bottom: var(--spacing-large);
+}
+
+.recipe h3 {
+    margin-bottom: var(--spacing-medium);
+}
+
+.recipe .content {
+    padding: 0 var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+}
+
+.recipe a:hover {
+    background-color: var(--text-dark);
+}
+
+.recipe a {
+    font-size: var(--fs-medium);
+    text-align: center;
+    color: var(--text-light);
+    background-color: var(--text-secondary);
+    border: 1px solid var(--text-secondary);
+    border-radius: 5px;
+    padding: var(--spacing-tiny);
+    width: 100px;
+}
+
+.recipe .info {
+    margin-bottom: var(--spacing-medium);
+}
+
+.info span {
+    margin-right: var(--spacing-small);
+}
+
+
+/* /// */
+
+
+/* MOBILE STYLING */
+
+@media (max-width: 992px) {
+    .recipe-wrapper {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .recipe-wrapper {
+        flex-basis: 100%;
+    }
+    .welcome h1 {
+        font-size: 2rem;
+    }
+}
+
+footer p {
+    color: var(--text-primary);
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+
+footer {
+    background-color: var(--orange-yellow);
+}
